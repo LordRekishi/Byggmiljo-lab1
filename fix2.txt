@@ -1,0 +1,39 @@
+cd <repository address>
+git init
+git branch -M main
+notepad README.md
+git status
+git add .
+git commit -m "Initial commit"
+git checkout -b feature1
+git add .
+git commit -m "Add dog AND change moose to mouse"
+git switch main
+notepad README.md
+git add .
+git commit -m "Change moose to mahmut"
+git merge feature1
+notepad README.md
+git add .
+git commit
+git tag extinct
+git reset --hard HEAD^
+notepad README.md
+git branch feature2
+git add .
+git commit -m "Change first letter to capital letter"
+git switch feature2
+notepad fix1.txt
+git add fix1.txt
+git commit -m "Add fix1.txt"
+notepad fix2.txt
+git add fix2.txt
+git commit -m "Add fix2.txt"
+git swtich main
+git cherry-pick feature2
+git log --graph --all
+notepad fix2.txt
+git remote add origin https://github.com/LordRekishi/Byggmiljo-lab1.git
+push -u origin main
+git push --all
+git push --tags
